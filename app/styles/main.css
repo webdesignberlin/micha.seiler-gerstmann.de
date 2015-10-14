@@ -13,18 +13,20 @@
     --space-4: 4rem;
     --container-width: 64em;
 
-    --heading__font-family: var(--font-family);
-    --heading__font-weight: bold;
+    --heading__font-family: var(--font-family--highlight);
+    --heading__font-weight: 400;
     --heading__line-height: 1.25;
     --heading__margin-top: var(--space-1);
     --heading__margin-bottom: var(--space-1);
 }
 
+/* huhu */
 
 body { margin: 0 }
 img { max-width: 100% }
 
 body {
+    margin: 0;
     font-family: var(--font-family);
     line-height: var(--line-height);
     font-size: 16px;
@@ -64,5 +66,26 @@ h3 { font-size: var(--h3) }
 
 .container {
     margin: 0 auto;
-    width: var(--container-width);
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+    max-width: var(--container-width);
 }
+
+.module {
+    margin-bottom: var(--space-2);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 100vmin;
+    text-align: center;
+}
+/*@media (orientation: portrait) {
+    .header {
+        min-height: 70vmax;
+    }
+}*/
