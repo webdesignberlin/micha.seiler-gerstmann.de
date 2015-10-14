@@ -1,0 +1,29 @@
+{
+  "name": "micha.seiler-gerstmann.de",
+  "version": "1.0.0",
+  "description": "Website Data of micha.seiler-gerstmann.de",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-postcss": "^0.6.0"
+  },
+  "devDependencies": {
+    "grunt-postcss": "^0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webdesignberlin/micha.seiler-gerstmann.de.git"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "author": "Michael Gerstmann @top_webdesign",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webdesignberlin/micha.seiler-gerstmann.de/issues"
+  },
+  "homepage": "https://github.com/webdesignberlin/micha.seiler-gerstmann.de"
+}
