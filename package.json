@@ -22,6 +22,7 @@
     "jshint-stylish": "^2.0.1",
     "load-grunt-config": "^0.17.2",
     "pixrem": "^3.0.0",
+    "postcss-discard-comments": "^2.0.1",
     "time-grunt": "^1.2.1"
   },
   "scripts": {
