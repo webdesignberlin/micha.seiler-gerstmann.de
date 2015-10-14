@@ -1,0 +1,18 @@
+{
+  "curly": true,
+  "node": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "indent": 2,
+  "quotmark": "single",
+  "undef": true,
+  "globals": {
+    "jQuery": true,
+    "$": true,
+    "ga": true,
+    "window": true,
+    "document": true,
+    "XMLHttpRequest": true,
+    "history": true
+  }
+}
