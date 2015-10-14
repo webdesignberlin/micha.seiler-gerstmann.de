@@ -1,3 +1,67 @@
+:root {
+    --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    --line-height: 1.5;
+    --font-family--monospace: 'Source Code Pro', Consolas, monospace;
+    --h1: 2rem;
+    --h2: 1.5rem;
+    --h3: 1.25rem;
+    --font-weight--bold: bold;
+    --space-1: .5rem;
+    --space-2: 1rem;
+    --space-3: 2rem;
+    --space-4: 4rem;
+    --container-width: 64em;
+
+    --heading__font-family: var(--font-family);
+    --heading__font-weight: bold;
+    --heading__line-height: 1.25;
+    --heading__margin-top: var(--space-1);
+    --heading__margin-bottom: var(--space-1);
+}
+
+
+body { margin: 0 }
+img { max-width: 100% }
+
 body {
-    background: #cfcfcf;
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading__font-family);
+    font-weight: var(--heading__font-weight);
+    line-height: var(--heading__line-height);
+    margin-top: var(--heading__margin-top);
+    margin-bottom: var(--heading__margin-bottom);
+}
+
+p {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1);
+}
+
+dl, ol, ul {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1);
+}
+
+pre, code, samp {
+    font-family: var(--font-family--monospace);
+}
+
+pre {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1);
+    overflow-x: scroll;
+}
+
+h1 { font-size: var(--h1) }
+h2 { font-size: var(--h2) }
+h3 { font-size: var(--h3) }
+
+.container {
+    margin: 0 auto;
+    width: var(--container-width);
 }
