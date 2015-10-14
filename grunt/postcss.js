@@ -10,14 +10,18 @@ module.exports = {
   // overall options
   options: {
     processors: [
-      require('autoprefixer-core')({browsers: ['last 2 version', 'ie 10', 'ie 11']})
+      require('pixrem')(), // add fallbacks for rem units
+      require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+      require('cssnano')() // minify the result
     ]
   },
 
   // main styles
   dev: {
     options: {
-      map: true
+      map: {
+        inline: true
+      }
     },
     src:  '<%= globalConfig.app %>/styles/main.css',
     dest: '<%= globalConfig.dist %>/styles/main.css'
