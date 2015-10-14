@@ -1,5 +1,6 @@
 :root {
-    --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    --font-family: Merriweather, 'Helvetica Neue', Helvetica, sans-serif;
+    --font-family--highlight: Oswald, sans-serif;
     --line-height: 1.5;
     --font-family--monospace: 'Source Code Pro', Consolas, monospace;
     --h1: 2rem;
