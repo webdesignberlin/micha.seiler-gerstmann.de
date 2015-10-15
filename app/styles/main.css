@@ -26,9 +26,32 @@
     --heading__margin-bottom: var(--space-1);
 }
 
-/* huhu */
 html {
     font-size: 75%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 40em) {
+    html {
+        font-size: 87.5%;
+    }
+}
+@media (min-width: 50em) {
+    html {
+        font-size: 93.75%;
+    }
+}
+@media (min-width: 64em) {
+    html {
+        font-size: 106.25%;
+    }
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 body { margin: 0 }
@@ -145,9 +168,3 @@ h3 { font-size: var(--h3) }
     color: var(--color-body--lighten);
     line-height: 1rem;
 }
-
-/*@media (orientation: portrait) {
-    .header {
-        min-height: 70vmax;
-    }
-}*/
