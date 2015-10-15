@@ -12,52 +12,99 @@
 </head>
 <body>
     <header class="container module header">
-        <!--<figure class="profile"><img src="assets/img/micha.jpg" alt="Profilfoto Michael Gerstmann" title="&copy; bytepark GmbH"></figure>-->
+        <figure class="profile"><img src="assets/img/micha.jpg" alt="@TODO" title="&copy; bytepark GmbH" width="400" height="300"></figure>
         <div class="hgroup">
-            <h1>Headline</h1>
-            <h2 data-text="Webentwickler und Problemlöser">Subheadline</h2>
+            <h1>Michael Gerstmann</h1>
+            <h2 data-text="Webentwickler und Problemlöser">Webentwickler und Problemlöser</h2>
         </div>
 
-        <blockquote cite="https://www.facebook.com/photo.php?fbid=10152122365677028&set=a.209368892027.163500.137781842027&type=1&stream_ref=10">
-            <p>Zitat</p>
-            <footer><cite><a href="https://www.facebook.com/photo.php?fbid=10152122365677028&set=a.209368892027.163500.137781842027&type=1&stream_ref=10">Zitat Footer</a></cite></footer>
+        <blockquote class="blockquote" cite="https://www.facebook.com/photo.php?fbid=10152122365677028&set=a.209368892027.163500.137781842027&type=1&stream_ref=10">
+            <p class="blockquote__content">... Michaels? Kann man nie genug haben.</p>
+            <footer>
+                <cite class="blockquote__cite">
+                    <a href="https://www.facebook.com/photo.php?fbid=10152122365677028&amp;set=a.209368892027.163500.137781842027&amp;type=1&amp;stream_ref=10">bytepark GmbH</a>
+                </cite>
+            </footer>
         </blockquote>
     </header>
 
     <article class="container module">
-        <h3 class="headline">
-            <small>blubb</small>
-            blabb
-        </h3>
-        <p>Lorem</p>
 
         <h3 class="headline">
-            <small>blubb</small>
-            blabb
+            <small class="headline__intro">Wer bin ich?</small>
+            Webentwickler aus Leidenschaft
         </h3>
-        <p>Lorem</p>
+        <p>In Berlin lebend, 30 Jahre alter, ausgebildeter Mediengestalter und seit einigen Jahren Webentwickler im Bereich Frontend.</p>
 
         <h3 class="headline">
-            <small>blubb</small>
-            blabb
+            <small class="headline__intro">Meine Tätigkeit...</small>
+            Momentan? Entwickeln.
         </h3>
-        <p>Lorem</p>
+        <p>Momentan bin ich <del>bei der bytepark GmbH</del> <ins>im McFIT Creative Office</ins> im Bereich <strong>Frontendentwicklung als Head of Frontend</strong> tätig. Meine Aufgabengebiete umfassen die Realisiserung von <a href="http://www.bytepark.de/referenzen/">Webprojekten</a> (Templateerstellung, Prototypen, Dashboards, Websites, Newsletter etc.). Hinzu kommt das Zuweisen von Aufgaben im Bereich Frontend als auch die Qualitätssicherung. Weitere Aufgaben liegen in der Weiterentwicklung des Workflowprozesses, das Anlernen von neuen Mitarbeitern, die Erstellung von Test/Probearbeiten und das führen von Bewerbungsgesprächen für Bewerber.</p>
+
+        <h3 class="headline">
+            <small class="headline__intro">Mein...</small>
+            Fokus?
+        </h3>
+        <p>Der Fokus ist auf die Templateerstellung (HTML5, CSS3, JS) gerichtet. Vor allem auf Webstandards, Performanceoptimierung und OnPage-SEO.</p>
+
+        <h3 class="headline">
+            <small class="headline__intro">Und meine</small>
+            Stärken?
+        </h3>
+        <p>HTML, CSS. Natürlich entsprechend den aktuellen Versionierungen. Responsive/Adaptive Design auf Basis des mobile first Ansatzes versteht sich von selbst.</p>
 
         <dl class="skills">
-            <dt>title</dt>
-            <dd>Description <abbr title="Object Oriented CSS">OOCSS</abbr></dd>
-            <dt>title</dt>
-            <dd>Description</dd>
-            <dt>title</dt>
-            <dd>Description</dd>
+            <dt>html, css</dt>
+            <dd>Fokusiert auf Cross-Plattform und Semantik, Accessibility Kenntnisse könnten ausgebaut werden. <abbr title="Block, Element, Modifier">BEM</abbr>, <abbr title="Object Oriented CSS">OOCSS</abbr>, <abbr title="Attribute Module CSS">AM-CSS</abbr> oder <abbr title="Scalable and Modular
+Architecture">SMACSS</abbr> sind für mich keine Fremdwörter, auch wenn man sich über die Umsetzbarkeit und Darseinsberechtigung von Pseudostandars streiten kann. Als Präprozessor kommt bei mir <abbr title="Syntactically Awesome Stylesheets">SASS</abbr> mit der <abbr title="Sassy CSS">SCSS</abbr>-Syntax zum Einsatz. Auf die Nutzung von erweiterten Frameworks wie Compass oder Bourbon habe ich bisher verzichtet.</dd>
+
+            <dt>Javascript</dt>
+            <dd>Für den täglichen gebrauch komme ich mit JQuery zurecht. Ansonsten ist JS nicht meine Welt, auch wenn es recht spannende Frameworks wie Angular gibt.</dd>
+
+            <dt>Arbeitsumfeld</dt>
+            <dd>Workflow mit Git, Vagrant, Grunt, Bower, Gulp</dd>
+
+            <dt>CMS</dt>
+            <dd>Erfahrungen in Typo3, Contao, mehreren Haus-CMS, Redaxo und Wordpress. In letzteren beiden bin ich recht fit. (Backend, Templateerstellung, Module)</dd>
+
+            <dt>Programme</dt>
+            <dd>Mit der Adobeproduktpalette aus dem Webbereich bin ich angefreundet, gleiches gilt für Codingtools wie phpstorm, webstorm, bracket oder sublimetext. Erfahrungen mit mehreren Bugtrackern und Taskverwaltungstools sind auch vorhanden.</dd>
+
+            <dt>Arbeits-, Prozessmethoden</dt>
+            <dd>Erfahrungen in Scrum und Kanban.</dd>
         </dl>
     </article>
     <section class="container module">
-        <h3>headline</h3>
-        <p>Lorem</p>
+        <h3>Und nun?</h3>
+        <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="mailto:guten-tag@seiler-gerstmann.de">Mail</a> zu erreichen. Ansonsten natürlich auch über die Sozialen Kanäle.</p>
         <ul class="social">
-            <li><a href="http://www.germanupa.de/benutzer/michael-gerstmann-2798/" class="title" title="Berufsverband der deutschen Usability-Experten"><b><abbr title="Usability Professionals' Association">UPA</abbr></b></a></li>
-
+            <li>
+                <a href="http://www.germanupa.de/benutzer/michael-gerstmann-2798/" title="Berufsverband der deutschen Usability-Experten">
+                    <b>Mitglied der German&nbsp;<abbr title="Usability Professionals' Association">UPA</abbr>
+                    </b>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Berlin.Webdesign" title="Facebookseite Webdesign Berlin">
+                    <b>Facebook</b>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/top_webdesign" title="als top_webdesign auf Twitter">
+                    <b>Twitter</b>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.xing.com/profile/Michael_SeilerGerstmann" title="Im Jobportal Xing">
+                    <b>XING</b>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/webdesignberlin" title="Auf GitHub">
+                    <b>GitHub</b>
+                </a>
+            </li>
         </ul>
     </section>
     <script src="/js/main.js"></script>
