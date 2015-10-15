@@ -10,10 +10,11 @@ module.exports = {
   // overall options
   options: {
     processors: [
-      require('pixrem')(), // add fallbacks for rem units
-      require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
       require('cssnext')(), // future CSS code right now
-      require('cssnano')({discardComments: {removeAll: true}}) // minify the result
+      require('pixrem')(), // add fallbacks for rem units
+      require('cssnano')({discardUnused: ({fontFace: false})}), // minify the result
+      require('autoprefixer')({browsers: 'last 2 versions'}) // add vendor prefixes
+
     ]
   },
 
