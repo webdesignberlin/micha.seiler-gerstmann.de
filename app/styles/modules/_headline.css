@@ -34,7 +34,8 @@
 }
 
 .headline__intro {
-    font-family: arial, sans-serif;
     display: block;
     color: var(--color-body--lighten);
+    font-family: arial, sans-serif;
+    line-height: 2;
 }

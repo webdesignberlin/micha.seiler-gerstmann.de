@@ -34,10 +34,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    margin: 0
-}
-
 img {
     max-width: 100%
 }
@@ -46,6 +42,7 @@ body {
     margin: 0;
     font-family: var(--font-family);
     line-height: var(--line-height);
+    font-weight: 400;
     font-size: 1.33333rem;
     color: var(--color-body);
 }
@@ -71,7 +68,7 @@ a {
 small {
     font-style: normal;
     font-weight: 200;
-    font-size: 1.06667rem;
+    font-size: .88235rem;
 }
 
 dl,
