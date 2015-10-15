@@ -62,6 +62,16 @@ module.exports = {
         tasks: [
             'build-html-dev'
         ]
+    },
+
+    // main markup files
+    main_images: {
+        files: [
+            '<%= globalConfig.app %>/img/**/*'
+        ],
+        tasks: [
+            'imagemin'
+        ]
     }
 
 };
