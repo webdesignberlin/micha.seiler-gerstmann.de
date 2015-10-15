@@ -21,7 +21,7 @@
   - 'build-js-dev'
   - 'build-css-dev'
   - 'build-html-dev'
-#  - 'jsonmin:i18n'
+  - 'imagemin'
 
 # process stylesheets dev
 'build-css-dev':
