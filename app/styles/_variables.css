@@ -1,0 +1,21 @@
+:root {
+    --font-family: Merriweather, 'Helvetica Neue', Helvetica, sans-serif;
+    --font-family--highlight: Oswald, sans-serif;
+    --font-family--code: 'Source Code Pro', Consolas, monospace;
+    --line-height: 1.5;
+    --font-weight--bold: bold;
+
+    --color-definition__black: #2e2e2e;
+    --color-definition__red: #d52836;
+    --color-definition__gray--light: #717171;
+    --color-body: var(--color-definition__black);
+    --color-body--lighten: var(--color-definition__gray--light);
+    --color-links: var(--color-definition__red);
+
+    --space-1: .56668rem;
+    --space-2: 1.43332rem;
+    --space-3: 2rem;
+    --space-4: 4rem;
+
+    --container-width: 94%;
+}

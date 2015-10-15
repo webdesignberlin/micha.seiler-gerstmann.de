@@ -1,0 +1,40 @@
+:root {
+    --heading__font-family: var(--font-family--highlight);
+    --heading__font-weight: 400;
+
+    --heading__line-height: 1.25;
+
+    --heading__margin-top: var(--space-1);
+    --heading__margin-bottom: var(--space-1);
+
+    --heading-size-h1: 2.33333rem;
+    --heading-size-h2: 2.08333rem;
+    --heading-size-h3: 1.86667rem;
+}
+
+.headline {
+    font-family: var(--heading__font-family);
+    font-weight: var(--heading__font-weight);
+    line-height: var(--heading__line-height);
+    margin-top: var(--heading__margin-top);
+    margin-bottom: var(--heading__margin-bottom);
+    font-feature-settings: 'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;
+}
+
+.headline--h1 {
+    font-size: var(--heading-size-h1)
+}
+
+.headline--h2 {
+    font-size: var(--heading-size-h2)
+}
+
+.headline--h3 {
+    font-size: var(--heading-size-h3)
+}
+
+.headline__intro {
+    font-family: arial, sans-serif;
+    display: block;
+    color: var(--color-body--lighten);
+}

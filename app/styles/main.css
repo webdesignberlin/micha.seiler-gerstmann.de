@@ -1,30 +1,9 @@
-:root {
-    --font-family: Merriweather, 'Helvetica Neue', Helvetica, sans-serif;
-    --font-family--highlight: Oswald, sans-serif;
-    --line-height: 1.5;
-    --font-family--monospace: 'Source Code Pro', Consolas, monospace;
-    --color-definition__black: #2e2e2e;
-    --color-definition__red: #d52836;
-    --color-definition__gray--light: #717171;
-    --color-body: var(--color-definition__black);
-    --color-body--lighten: var(--color-definition__gray--light);
-    --color-links: var(--color-definition__red);
-    --h1: 2.33333rem;
-    --h2: 2.08333rem;
-    --h3: 1.86667rem;
-    --font-weight--bold: bold;
-    --space-1: .56668rem;
-    --space-2: 1.43332rem;
-    --space-3: 2rem;
-    --space-4: 4rem;
-    --container-width: 94%;
+@charset "UTF-8";
 
-    --heading__font-family: var(--font-family--highlight);
-    --heading__font-weight: 400;
-    --heading__line-height: 1.25;
-    --heading__margin-top: var(--space-1);
-    --heading__margin-bottom: var(--space-1);
-}
+@import "_variables.css";
+@import "modules/_header.css";
+@import "modules/_blockquote.css";
+@import "modules/_headline.css";
 
 html {
     font-size: 75%;
@@ -47,6 +26,7 @@ html {
     }
 }
 
+/* + Basics */
 
 *,
 *::before,
@@ -54,8 +34,13 @@ html {
     box-sizing: inherit;
 }
 
-body { margin: 0 }
-img { max-width: 100% }
+body {
+    margin: 0
+}
+
+img {
+    max-width: 100%
+}
 
 body {
     margin: 0;
@@ -65,16 +50,8 @@ body {
     color: var(--color-body);
 }
 
-h1, h2, h3, dt {
-    font-family: var(--heading__font-family);
-    font-weight: var(--heading__font-weight);
-    line-height: var(--heading__line-height);
-    margin-top: var(--heading__margin-top);
-    margin-bottom: var(--heading__margin-bottom);
-    font-feature-settings: 'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;
-}
-
-dd, li {
+dd,
+li {
     margin-left: var(--space-2);
 }
 
@@ -97,15 +74,19 @@ small {
     font-size: 1.06667rem;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
     margin-top: var(--space-1);
     margin-bottom: var(--space-1);
     padding-left: 0;
     font-feature-settings: 'kern' 1,'onum' 1,'liga' 1;
 }
 
-pre, code, samp {
-    font-family: var(--font-family--monospace);
+pre,
+code,
+samp {
+    font-family: var(--font-family--code);
 }
 
 pre {
@@ -114,9 +95,7 @@ pre {
     overflow-x: scroll;
 }
 
-h1 { font-size: var(--h1) }
-h2 { font-size: var(--h2) }
-h3 { font-size: var(--h3) }
+/* + Styles */
 
 .container {
     margin: 0 auto;
@@ -128,43 +107,4 @@ h3 { font-size: var(--h3) }
 
 .module {
     margin-bottom: var(--space-2);
-}
-
-.header {
-    height: 100%;
-    min-height: 100vmin;
-}
-
-.profile,
-.blockquote {
-    margin-left: 0;
-}
-
-.blockquote__content {
-    position: relative;
-    margin-top: var(--space-2);
-    padding-left: calc(var(--space-2) * 3);
-    font-style: italic;
-}
-.blockquote__content::before {
-    display: block;
-    content: '\201C';
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 6rem;
-    line-height: 1em;
-    color: #7a7a7a;
-    font-family: Georgia, serif;
-}
-.blockquote__cite::before {
-    content: "\2014 \2009";
-}
-
-.headline {}
-.headline__intro {
-    font-family: arial, sans-serif;
-    display: block;
-    color: var(--color-body--lighten);
-    line-height: 1rem;
 }
