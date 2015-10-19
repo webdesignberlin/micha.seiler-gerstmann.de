@@ -79,7 +79,7 @@ Architecture">SMACSS</abbr> sind für mich keine Fremdwörter, auch wenn man sic
     </article>
     <section class="container module">
         <h3 class="headline headline--h3">Und nun?</h3>
-        <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="mailto:guten-tag@seiler-gerstmann.de">Mail</a> zu erreichen. Ansonsten natürlich auch über die Sozialen Kanäle.</p>
+        <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="#">Mail</a> zu erreichen. Ansonsten natürlich auch über die Sozialen Kanäle.</p>
         <ul class="social">
             <li>
                 <a href="http://www.germanupa.de/benutzer/michael-gerstmann-2798/" title="Berufsverband der deutschen Usability-Experten">
@@ -139,6 +139,15 @@ Architecture">SMACSS</abbr> sind für mich keine Fremdwörter, auch wenn man sic
 
         typeWriter(text, 0);
 
+    </script>
+
+    <script>
+        [].forEach.call(
+            document.getElementsByClassName("js-mailto"),function(e){
+                e.setAttribute("href","mailto:" + e.getAttribute("data-mailto-user") + "@" + (e.getAttribute("data-mailto-domain")||window.location.host)
+                )
+            }
+        );
     </script>
 </body>
 </html>
