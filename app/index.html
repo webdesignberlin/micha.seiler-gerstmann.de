@@ -17,7 +17,7 @@
         </figure>
         <div class="hgroup">
             <h1 class="headline headline--h1">Michael Gerstmann</h1>
-            <h2 class="headline headline--h2" data-text="Webentwickler und Problemlöser">Webentwickler und Problemlöser</h2>
+            <h2 class="headline headline--h2" data-text="Webentwickler und Problemlöser" id="js-typewriter">Webentwickler und Problemlöser</h2>
         </div>
 
         <blockquote class="blockquote" cite="https://www.facebook.com/photo.php?fbid=10152122365677028&set=a.209368892027.163500.137781842027&type=1&stream_ref=10">
@@ -120,6 +120,25 @@ Architecture">SMACSS</abbr> sind für mich keine Fremdwörter, auch wenn man sic
             wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
             s.parentNode.insertBefore(wf, s);
         })(document);
+    </script>
+
+    <script>
+        var typewriter = document.getElementById('js-typewriter');
+        var text = typewriter.getAttribute('data-text');
+        function typeWriter(text, n) {
+            if (n < (text.length)) {
+                var textSubstring = text.substring(0, n+1);
+                typewriter.innerHTML = textSubstring;
+
+                n++;
+                setTimeout(function() {
+                    typeWriter(text, n)
+                }, 100);
+            }
+        }
+
+        typeWriter(text, 0);
+
     </script>
 </body>
 </html>
