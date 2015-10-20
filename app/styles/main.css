@@ -81,18 +81,6 @@ ul {
     font-feature-settings: 'kern' 1,'onum' 1,'liga' 1;
 }
 
-pre,
-code,
-samp {
-    font-family: var(--font-family--code);
-}
-
-pre {
-    margin-top: var(--space-1);
-    margin-bottom: var(--space-1);
-    overflow-x: scroll;
-}
-
 /* + Styles */
 
 .container {
