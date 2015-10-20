@@ -108,46 +108,6 @@ Architecture">SMACSS</abbr> sind für mich keine Fremdwörter, auch wenn man sic
             </li>
         </ul>
     </section>
-    <script src="/js/main.js"></script>
-    <script>
-        WebFontConfig = {
-            google: {
-                families: [ 'Merriweather:300:latin', 'Oswald::latin' ]
-            }
-        };
-        (function(d) {
-            var wf = d.createElement('script'), s = d.scripts[0];
-            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-            s.parentNode.insertBefore(wf, s);
-        })(document);
-    </script>
-
-    <script>
-        var typewriter = document.getElementById('js-typewriter');
-        var text = typewriter.getAttribute('data-text');
-        function typeWriter(text, n) {
-            if (n < (text.length)) {
-                var textSubstring = text.substring(0, n+1);
-                typewriter.innerHTML = textSubstring;
-
-                n++;
-                setTimeout(function() {
-                    typeWriter(text, n)
-                }, 100);
-            }
-        }
-
-        typeWriter(text, 0);
-
-    </script>
-
-    <script>
-        [].forEach.call(
-            document.getElementsByClassName("js-mailto"),function(e){
-                e.setAttribute("href","mailto:" + e.getAttribute("data-mailto-user") + "@" + (e.getAttribute("data-mailto-domain")||window.location.host)
-                )
-            }
-        );
-    </script>
+    <script src="/js/main.js" async></script>
 </body>
 </html>
