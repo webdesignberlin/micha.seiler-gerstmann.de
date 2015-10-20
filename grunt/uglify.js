@@ -13,7 +13,7 @@ module.exports = {
             sourceMap: false
         },
         files: {
-            '<%= globalConfig.dist %>/js/main.js': ['<%= globalConfig.app %>/js/main.js']
+            '<%= globalConfig.dist %>/js/main.js': ['<%= globalConfig.dist %>/js/main.js']
         }
     }
 
