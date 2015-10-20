@@ -5,6 +5,3 @@ mailProtection.mailProtection();
 
 var fontLoader = require('./modules/font-loader');
 fontLoader(document);
-
-var initTypeWriter = require('./modules/typewriter');
-initTypeWriter();
