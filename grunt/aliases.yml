@@ -27,15 +27,36 @@
 'build-css-dev':
   - 'postcss:dev'
 
+# process javascripts dev
+'build-js-dev':
+  - 'jshint'
+  - 'browserify:dev'
+  - 'uglify'
+
+# process html dev
+'build-html-dev':
+  - 'htmlmin'
+
+
+# Buildtask for live
+'build':
+  - 'build-js'
+  - 'build-css'
+  - 'build-html'
+  - 'imagemin'
+  - 'copy:htaccess'
+  - 'critical'
+
 # process stylesheets dev
 'build-css':
   - 'postcss:build'
 
 # process javascripts dev
-'build-js-dev':
+'build-js':
   - 'jshint'
+  - 'browserify:build'
   - 'uglify'
 
 # process html dev
-'build-html-dev':
+'build-html':
   - 'htmlmin'

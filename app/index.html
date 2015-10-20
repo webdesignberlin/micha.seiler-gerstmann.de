@@ -8,6 +8,12 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="cleartype" content="on">
+
+    <!-- DNS Prefetching -->
+    <link href="//fonts.googleapis.com" rel="dns-prefetch" />
+    <link href="//www.google-analytics.com" rel="dns-prefetch" />
+    <link href="//fonts.googleapis.com" rel="preconnect" crossorigin>
+
     <link href="/styles/main.css" rel="stylesheet">
 </head>
 <body>
@@ -17,7 +23,7 @@
         </figure>
         <div class="hgroup">
             <h1 class="headline headline--h1">Michael Gerstmann</h1>
-            <h2 class="headline headline--h2" data-text="Webentwickler und Problemlöser">Webentwickler und Problemlöser</h2>
+            <h2 class="headline headline--h2" data-text="Webentwickler und Problemlöser" id="js-typewriter">Webentwickler und Problemlöser</h2>
         </div>
 
         <blockquote class="blockquote" cite="https://www.facebook.com/photo.php?fbid=10152122365677028&set=a.209368892027.163500.137781842027&type=1&stream_ref=10">
@@ -79,7 +85,7 @@ Architecture">SMACSS</abbr> sind für mich keine Fremdwörter, auch wenn man sic
     </article>
     <section class="container module">
         <h3 class="headline headline--h3">Und nun?</h3>
-        <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="mailto:guten-tag@seiler-gerstmann.de">Mail</a> zu erreichen. Ansonsten natürlich auch über die Sozialen Kanäle.</p>
+        <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="#">Mail</a> zu erreichen. Ansonsten natürlich auch über die Sozialen Kanäle.</p>
         <ul class="social">
             <li>
                 <a href="http://www.germanupa.de/benutzer/michael-gerstmann-2798/" title="Berufsverband der deutschen Usability-Experten">
@@ -108,18 +114,6 @@ Architecture">SMACSS</abbr> sind für mich keine Fremdwörter, auch wenn man sic
             </li>
         </ul>
     </section>
-    <script src="/js/main.js"></script>
-    <script>
-        WebFontConfig = {
-            google: {
-                families: [ 'Merriweather:300:latin', 'Oswald::latin' ]
-            }
-        };
-        (function(d) {
-            var wf = d.createElement('script'), s = d.scripts[0];
-            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-            s.parentNode.insertBefore(wf, s);
-        })(document);
-    </script>
+    <script src="/js/main.js" async></script>
 </body>
 </html>

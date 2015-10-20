@@ -53,6 +53,10 @@ li {
     margin-left: var(--space-2);
 }
 
+li {
+    margin-bottom: var(--space-1);
+}
+
 p {
     margin: 0;
     padding-top: var(--space-1);
@@ -79,18 +83,6 @@ ul {
     margin-bottom: var(--space-1);
     padding-left: 0;
     font-feature-settings: 'kern' 1,'onum' 1,'liga' 1;
-}
-
-pre,
-code,
-samp {
-    font-family: var(--font-family--code);
-}
-
-pre {
-    margin-top: var(--space-1);
-    margin-bottom: var(--space-1);
-    overflow-x: scroll;
 }
 
 /* + Styles */
