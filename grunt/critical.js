@@ -13,8 +13,8 @@ module.exports = {
       css: [
         '<%= globalConfig.dist %>/styles/main.css'
       ],
-      width: 320,
-      height: 70
+      width: 640,
+      height: 480
     },
     src: '<%= globalConfig.dist %>/index.html',
     dest: '<%= globalConfig.dist %>/index.html'
