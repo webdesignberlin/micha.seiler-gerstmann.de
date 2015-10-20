@@ -45,6 +45,7 @@
   - 'build-html'
   - 'imagemin'
   - 'copy:htaccess'
+  - 'critical'
 
 # process stylesheets dev
 'build-css':
