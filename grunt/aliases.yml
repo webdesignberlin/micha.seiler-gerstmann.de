@@ -34,6 +34,7 @@
 # process javascripts dev
 'build-js-dev':
   - 'jshint'
+  - 'browserify:dev'
   - 'uglify'
 
 # process html dev
