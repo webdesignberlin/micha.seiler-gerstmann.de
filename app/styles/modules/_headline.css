@@ -13,12 +13,15 @@
 }
 
 .headline {
-    font-family: var(--heading__font-family);
     font-weight: var(--heading__font-weight);
     line-height: var(--heading__line-height);
     margin-top: var(--heading__margin-top);
     margin-bottom: var(--heading__margin-bottom);
     font-feature-settings: 'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;
+}
+
+.wf-oswald-n4-active .headline {
+    font-family: var(--heading__font-family);
 }
 
 .headline--h1 {

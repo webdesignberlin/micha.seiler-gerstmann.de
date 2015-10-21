@@ -41,11 +41,14 @@ img {
 
 body {
     margin: 0;
-    font-family: var(--font-family);
     line-height: var(--line-height);
     font-weight: 400;
     font-size: 1.33333rem;
     color: var(--color-body);
+}
+
+.wf-merriweather-n3-active body {
+    font-family: var(--font-family);
 }
 
 dd,
