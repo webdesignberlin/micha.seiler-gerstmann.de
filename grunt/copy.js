@@ -7,9 +7,15 @@
  */
 module.exports = {
 
-  htaccess: {
+  standards: {
     expand: true,
-    src:    '<%= globalConfig.app %>/.htaccess',
+    src:    ['<%= globalConfig.app %>/.htaccess','<%= globalConfig.app %>/humans.txt','<%= globalConfig.app %>/robots.txt'],
+    dest:   '<%= globalConfig.dist %>/',
+    flatten: true
+  },
+  offline: {
+    expand: true,
+    src:    '<%= globalConfig.app %>/cache.manifest',
     dest:   '<%= globalConfig.dist %>/',
     flatten: true
   }
