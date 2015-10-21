@@ -44,7 +44,8 @@
   - 'build-css'
   - 'build-html'
   - 'imagemin'
-  - 'copy:htaccess'
+  - 'copy:standards'
+  - 'copy:offline'
   - 'critical'
 
 # process stylesheets dev
