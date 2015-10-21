@@ -9,7 +9,7 @@ module.exports = {
 
   standards: {
     expand: true,
-    src:    ['<%= globalConfig.app %>/.htaccess','<%= globalConfig.app %>/humans.txt','<%= globalConfig.app %>/robots.txt'],
+    src:    ['<%= globalConfig.app %>/.htaccess','<%= globalConfig.app %>/humans.txt','<%= globalConfig.app %>/robots.txt','<%= globalConfig.app %>/favicons/*'],
     dest:   '<%= globalConfig.dist %>/',
     flatten: true
   },
