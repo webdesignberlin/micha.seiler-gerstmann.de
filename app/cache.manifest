@@ -1,6 +1,7 @@
 CACHE MANIFEST
 NETWORK:
 #js/ping.js
+*
 CACHE:
 index.html
 styles/main.css
