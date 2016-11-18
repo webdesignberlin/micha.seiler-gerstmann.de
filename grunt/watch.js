@@ -72,6 +72,17 @@ module.exports = {
         tasks: [
             'imagemin'
         ]
+    },
+
+    additional_files: {
+        files: [
+            '<%= globalConfig.app %>/humans.txt',
+            '<%= globalConfig.app %>/.htaccess',
+            '<%= globalConfig.app %>/cache.manifest'
+        ],
+        tasks: [
+            'copy'
+        ]
     }
 
 };
