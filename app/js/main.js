@@ -8,3 +8,6 @@ fontLoader(document);
 
 var addJSClass = require('./modules/no-js');
 addJSClass.addJSClass();
+
+var asyncImages = require('./modules/async-images');
+asyncImages.asyncImages();
