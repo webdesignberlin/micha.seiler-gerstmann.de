@@ -1,5 +1,6 @@
 :root {
     --heading__font-family: var(--font-family--highlight);
+    --heading__font-family--fallback: var(--font-family--highlight-fallback);
     --heading__font-weight: 400;
 
     --heading__line-height: 1.25;
@@ -18,10 +19,15 @@
     margin-top: var(--heading__margin-top);
     margin-bottom: var(--heading__margin-bottom);
     font-feature-settings: 'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;
+
+    font-family: var(--heading__font-family--fallback);
+    letter-spacing: -0.07em;
+    font-size-adjust: 0.5;
 }
 
 .wf-oswald-n4-active .headline {
     font-family: var(--heading__font-family);
+    letter-spacing: normal;
 }
 
 .headline--h1 {

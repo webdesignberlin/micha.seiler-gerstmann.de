@@ -1,6 +1,8 @@
 :root {
     --font-family: Merriweather, 'Helvetica Neue', Helvetica, sans-serif;
-    --font-family--highlight: Oswald, sans-serif;
+    --font-family--fallback: 'Helvetica Neue', Helvetica, sans-serif;
+    --font-family--highlight: Oswald, Impact, 'Franklin Gothic Bold', sans-serif;
+    --font-family--highlight-fallback: 'Franklin Gothic Bold', sans-serif;
     --font-family--code: 'Source Code Pro', Consolas, monospace;
     --line-height: 1.5;
     --font-weight--bold: bold;
