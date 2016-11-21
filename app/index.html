@@ -38,119 +38,123 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header class="container module header">
-        <figure class="header__profile">
-            <img src="data:image/png;base64,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"
-                 data-src="/img/micha-frontend.jpg" alt="Profilfoto Michael Gerstmann" title="&copy; bytepark GmbH" width="300" height="400" class="js-async-image header__profile-image">
-        </figure>
-        <div class="hgroup">
-            <h1 class="headline headline--h1">Michael Gerstmann</h1>
-            <h2 class="headline headline--h2" data-text="Webentwickler und Problemlöser" id="js-typewriter">Webentwickler und Problemlöser</h2>
-        </div>
+<header class="container module header">
+    <figure class="header__profile">
+        <img src="data:image/png;base64,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"
+             data-src="/img/micha-frontend.jpg" alt="Profilfoto Michael Gerstmann" title="&copy; bytepark GmbH" width="300" height="400" class="js-async-image header__profile-image">
+    </figure>
+    <div class="hgroup">
+        <h1 class="headline headline--h1">Michael Gerstmann</h1>
+        <h2 class="headline headline--h2" data-text="Webentwickler und Problemlöser" id="js-typewriter">Webentwickler und Problemlöser</h2>
+    </div>
 
-        <blockquote class="blockquote" cite="https://www.facebook.com/photo.php?fbid=10152122365677028&set=a.209368892027.163500.137781842027&type=1&stream_ref=10">
-            <p class="blockquote__content">&hellip; Michaels? Kann man nie genug haben.</p>
-            <footer>
-                <cite class="blockquote__cite">
-                    <a href="https://www.facebook.com/photo.php?fbid=10152122365677028&amp;set=a.209368892027.163500.137781842027&amp;type=1&amp;stream_ref=10">bytepark GmbH</a>
-                </cite>
-            </footer>
-        </blockquote>
-    </header>
+    <blockquote class="blockquote" cite="https://www.facebook.com/photo.php?fbid=10152122365677028&set=a.209368892027.163500.137781842027&type=1&stream_ref=10">
+        <p class="blockquote__content">&hellip; Michaels? Kann man nie genug haben.</p>
+        <footer>
+            <cite class="blockquote__cite">
+                <a href="https://www.facebook.com/photo.php?fbid=10152122365677028&amp;set=a.209368892027.163500.137781842027&amp;type=1&amp;stream_ref=10">bytepark GmbH</a>
+            </cite>
+        </footer>
+    </blockquote>
+</header>
 
-    <article class="container module">
+<article class="container module">
 
-        <h3 class="headline headline--h3">
-            <small class="headline__intro">Wer bin ich?</small>
-            Webentwickler aus Leidenschaft
-        </h3>
-        <p>In Berlin lebend, 30 Jahre alter, ausgebildeter Mediengestalter und seit einigen Jahren Webentwickler im Bereich Frontend.</p>
+    <h3 class="headline headline--h3">
+        <small class="headline__intro">Wer bin ich?</small>
+        Webentwickler aus Leidenschaft
+    </h3>
+    <p>In Berlin lebend, 32 Jahre alter, ausgebildeter Mediengestalter und seit einigen Jahren Webentwickler im Bereich Frontend.</p>
 
-        <h3 class="headline headline--h3">
-            <small class="headline__intro">Meine Tätigkeit &hellip;</small>
-            Momentan? Entwickeln.
-        </h3>
-        <p>Momentan bin ich <del>bei der bytepark GmbH</del> <ins>im McFIT Creative Office</ins> im Bereich <strong>Frontendentwicklung als Head of Frontend</strong> tätig. Meine Aufgabengebiete umfassen die Realisiserung von <a href="http://www.bytepark.de/referenzen/">Webprojekten</a> (Templateerstellung, Prototypen, Dashboards, Websites, Newsletter etc.). Hinzu kommt das Zuweisen von Aufgaben im Bereich Frontend als auch die Qualitätssicherung. Weitere Aufgaben liegen in der Weiterentwicklung des Workflowprozesses, das Anlernen von neuen Mitarbeitern, die Erstellung von Test/Probearbeiten und das führen von Bewerbungsgesprächen für Bewerber.</p>
+    <h3 class="headline headline--h3">
+        <small class="headline__intro">Meine Tätigkeit &hellip;</small>
+        Momentan? Entwickeln.
+    </h3>
+    <p>Momentan bin ich im Creative Office der McFIT Global Group im Bereich <strong>IT / Digitale Produktentwicklung als Senior Frontend-Entwickler</strong> tätig.
+        Meine Aufgabengebiete umfassen die Realisiserung von Webprojekten (Templateerstellung, Prototypen, Dashboards, Websites, Web-Applikationen etc.).
+        Hinzu kommt das Zuweisen von Aufgaben im Bereich Frontend als auch die Qualitätssicherung. Weitere Aufgaben liegen in der Weiterentwicklung von Workflowprozessen,
+        das Anlernen von neuen Mitarbeitern und das führen von Bewerbungsgesprächen.</p>
 
-        <h3 class="headline headline--h3">
-            <small class="headline__intro">Mein...</small>
-            Fokus?
-        </h3>
-        <p>Der Fokus ist auf die Templateerstellung (HTML5, CSS3, JS) gerichtet. Vor allem auf Webstandards, Performanceoptimierung und OnPage-SEO.</p>
+    <h3 class="headline headline--h3">
+        <small class="headline__intro">Mein...</small>
+        Fokus?
+    </h3>
+    <p>Der Fokus ist auf die Templateerstellung (HTML5, CSS3, JS) gerichtet. Vor allem auf Webstandards, Performanceoptimierung und OnPage-SEO.</p>
 
-        <h3 class="headline headline--h3">
-            <small class="headline__intro">Und meine</small>
-            Stärken?
-        </h3>
-        <p>HTML, CSS. Natürlich entsprechend den aktuellen Versionierungen. Responsive/Adaptive Design auf Basis des mobile first Ansatzes versteht sich von selbst.</p>
+    <h3 class="headline headline--h3">
+        <small class="headline__intro">Und meine</small>
+        Stärken?
+    </h3>
+    <p>HTML, CSS. Natürlich entsprechend den aktuellen Versionierungen. Responsive/Adaptive Design auf Basis des mobile first Ansatzes versteht sich von selbst.</p>
 
-        <dl class="skills">
-            <dt class="headline">html, css</dt>
-            <dd>Fokusiert auf Cross-Plattform und Semantik, Accessibility Kenntnisse könnten ausgebaut werden. <abbr title="Block, Element, Modifier">BEM</abbr>, <abbr title="Object Oriented CSS">OOCSS</abbr>, <abbr title="Attribute Module CSS">AM-CSS</abbr> oder <abbr title="Scalable and Modular
-Architecture">SMACSS</abbr> sind für mich keine Fremdwörter, auch wenn man sich über die Umsetzbarkeit und Darseinsberechtigung von Pseudostandars streiten kann. Als Präprozessor kommt bei mir <abbr title="Syntactically Awesome Stylesheets">SASS</abbr> mit der <abbr title="Sassy CSS">SCSS</abbr>-Syntax zum Einsatz. Auf die Nutzung von erweiterten Frameworks wie Compass oder Bourbon habe ich bisher verzichtet.</dd>
+    <dl class="skills">
+        <dt class="headline">html, css</dt>
+        <dd>Fokussiert auf Cross-Plattform und Semantik, Accessibility Kenntnisse könnten ausgebaut werden.
+            Von all den CSS-Methodologien (<abbr title="Object Oriented CSS">OOCSS</abbr>, <abbr title="Attribute Module CSS">AM-CSS</abbr> oder <abbr title="Scalable and Modular
+Architecture">SMACSS</abbr>, &hellip;) habe ich innerhalb der letzten Jahren den größten Teil der Projekte mit <abbr title="Block, Element, Modifier">BEM</abbr> umgesetzt. Als Präprozessor kommt bei mir <abbr title="Syntactically Awesome Stylesheets">SASS</abbr> mit der <abbr title="Sassy CSS">SCSS</abbr>-Syntax zum Einsatz.</dd>
 
-            <dt class="headline">Javascript</dt>
-            <dd>Für den täglichen gebrauch komme ich mit JQuery zurecht. Ansonsten ist JS nicht meine Welt, auch wenn es recht spannende Frameworks wie Angular gibt.</dd>
+        <dt class="headline">Javascript</dt>
+        <dd>Gehört halt irgendwie dazu. Seit zwei Jahren größtenteils Vanilla unterwegs, davor jQuery. Für den täglichen Gebrauch bin ich relativ fit, auch finde ich mich in express und angular schnell rein. Eine Liebe zu JavaScript habe ich bisher nicht aufbauen können.</dd>
 
-            <dt class="headline">Arbeitsumfeld</dt>
-            <dd>Workflow mit Git, Vagrant, Grunt, Bower, Gulp</dd>
+        <dt class="headline">Arbeitsumfeld</dt>
+        <dd>Workflow mit Git, Vagrant, Docker, Jenkins, Grunt, Bower, Gulp.</dd>
 
-            <dt class="headline">CMS</dt>
-            <dd>Erfahrungen in Typo3, Contao, mehreren Haus-CMS, Redaxo und Wordpress. In letzteren beiden bin ich recht fit. (Backend, Templateerstellung, Module)</dd>
+        <dt class="headline">CMS</dt>
+        <dd>Erfahrungen in Typo3, Contao, mehreren Haus-CMS, Redaxo und Wordpress. In letzteren beiden bin ich recht fit. (Backend, Templateerstellung, Module)</dd>
 
-            <dt class="headline">Programme</dt>
-            <dd>Mit der Adobeproduktpalette aus dem Webbereich bin ich angefreundet, gleiches gilt für Codingtools wie phpstorm, webstorm, bracket oder sublimetext. Erfahrungen mit mehreren Bugtrackern und Taskverwaltungstools sind auch vorhanden.</dd>
+        <dt class="headline">Programme</dt>
+        <dd>Mit der Adobeproduktpalette aus dem Webbereich bin ich angefreundet, gleiches gilt für Codingtools wie phpstorm, webstorm, bracket oder sublimetext. Erfahrungen mit mehreren Bugtrackern und Taskverwaltungstools sind auch vorhanden.</dd>
 
-            <dt class="headline">Arbeits-, Prozessmethoden</dt>
-            <dd>Erfahrungen in Scrum und Kanban.</dd>
-        </dl>
-    </article>
-    <section class="container module">
-        <h3 class="headline headline--h3">Und nun?</h3>
-        <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="#">Mail</a> zu erreichen. Ansonsten natürlich auch über die Sozialen Kanäle.</p>
-        <ul class="social">
-            <li>
-                <a href="http://www.germanupa.de/benutzer/michael-gerstmann-2798/" title="Berufsverband der deutschen Usability-Experten">
-                    <b>Mitglied der German&nbsp;<abbr title="Usability Professionals' Association">UPA</abbr></b>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/top_webdesign" title="als top_webdesign auf Twitter">
-                    <b>Twitter</b>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/webdesignberlin" title="Auf GitHub">
-                    <b>GitHub</b>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.xing.com/profile/Michael_SeilerGerstmann" title="Im Jobportal Xing">
-                    <b>XING</b>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/Berlin.Webdesign" title="Facebookseite Webdesign Berlin">
-                    <b>Facebook</b>
-                </a>
-            </li>
-            <li>
-                <a href="https://de.linkedin.com/pub/michael-seiler-gerstmann/25/629/199" title="Im Jobportal LinkedIn">
-                    <b>LinkedIn</b>
-                </a>
-            </li>
-            <li>
-                <a href="https://vimeo.com/webdesignberlin/likes" title="webdesign berlin auf vimeo">
-                    <b>Vimeo</b>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/user/derkoala84" title="Youtubekanal">
-                    <b>Youtube</b>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <script src="/js/main.js" async></script>
+        <dt class="headline">Arbeits-, Prozessmethoden</dt>
+        <dd>Erfahrungen in Scrum und Kanban.</dd>
+    </dl>
+</article>
+<section class="container module">
+    <h3 class="headline headline--h3">Und nun?</h3>
+    <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="#">Mail</a> zu erreichen. Ansonsten natürlich auch über die Sozialen Kanäle. Code Beispiele und Arbeiten gibt es auf <a href="https://github.com/webdesignberlin">GitHub</a> und per Nachfrage auf <a href="https://bitbucket.org/webdesignberlin/">Bitbucket</a>.</p>
+    <ul class="social">
+        <li>
+            <a href="https://github.com/webdesignberlin" title="Auf GitHub">
+                <b>GitHub</b>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/top_webdesign" title="als top_webdesign auf Twitter">
+                <b>Twitter</b>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.germanupa.de/benutzer/michael-gerstmann-2798/" title="Berufsverband der deutschen Usability-Experten">
+                <b>Mitglied der German&nbsp;<abbr title="Usability Professionals' Association">UPA</abbr></b>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.xing.com/profile/Michael_SeilerGerstmann" title="Im Jobportal Xing">
+                <b>XING</b>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/Berlin.Webdesign" title="Facebookseite Webdesign Berlin">
+                <b>Facebook</b>
+            </a>
+        </li>
+        <li>
+            <a href="https://de.linkedin.com/pub/michael-seiler-gerstmann/25/629/199" title="Im Jobportal LinkedIn">
+                <b>LinkedIn</b>
+            </a>
+        </li>
+        <li>
+            <a href="https://vimeo.com/webdesignberlin/likes" title="webdesign berlin auf vimeo">
+                <b>Vimeo</b>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/user/derkoala84" title="Youtubekanal">
+                <b>Youtube</b>
+            </a>
+        </li>
+    </ul>
+</section>
+<script src="/js/main.js" async></script>
 </body>
 </html>
