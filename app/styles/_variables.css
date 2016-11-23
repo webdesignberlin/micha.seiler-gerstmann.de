@@ -6,6 +6,7 @@
     --font-family--code: 'Source Code Pro', Consolas, monospace;
     --line-height: 1.5;
     --font-weight--bold: bold;
+    --font-size-small: .88235rem;
 
     --color-definition__black: #242424;
     --color-definition__red: #d52836;

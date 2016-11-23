@@ -1,0 +1,25 @@
+:root {
+    --tech-list__font-size-small: var(--font-size-small);
+    --tech-list__color-highlight: var(--color-definition__red);
+    --tech-list__color-text: #fff;
+    --tech-list__space: var(--space-1);
+    --tech-list__space--small: calc(var(--tech-list__space) / 2);
+}
+
+.tech-list {
+    list-style: none;
+    font-size: var(--tech-list__font-size-small);
+    margin-bottom: var(--space-2);
+}
+
+.tech-list__label {
+    display: inline-block;
+    background-color: var(--tech-list__color-highlight);
+    color: var(--tech-list__color-text);
+    padding: var(--tech-list__space--small) var(--tech-list__space);
+}
+
+.tech-list__label::before {
+    content: '\2699';
+    padding-right: 0.4rem;
+}
