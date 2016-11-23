@@ -27,9 +27,11 @@ module.exports = function() {
         //console.log('done');
       };
 
-      trigger[0].addEventListener('click', function () {
-        scrollIt(sections[0], 300, 'easeInQuad', done);
-      });
+      if (trigger[0]){
+        trigger[0].addEventListener('click', function () {
+          scrollIt(sections[0], 300, 'easeInQuad', done);
+        });
+      }
 
     }
   }
