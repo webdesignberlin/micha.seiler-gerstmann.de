@@ -4,8 +4,18 @@ NETWORK:
 *
 CACHE:
 index.html
+vita.html
 styles/main.css
 js/main.js
 img/micha-frontend.jpg
+
+favicon-16x16.png
+favicon-96x96.png
+favicon-194x194.png
+android-chrome-192x192.png
+
+http://fonts.googleapis.com/css?family=Merriweather:300%7COswald&subset=latin,latin
+http://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6nk4GofcKVZz6wtzX_QUIqsI.woff2
+http://fonts.gstatic.com/s/oswald/v11/pEobIV_lL25TKBpqVI_a2w.woff2
 
 # browser-sync/browser-sync-client.2.9.11.js
