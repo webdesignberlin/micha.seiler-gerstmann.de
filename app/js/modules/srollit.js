@@ -32,7 +32,7 @@ function scrollIt(element) {
             return t * t * t * t;
         },
         easeOutQuart: function easeOutQuart(t) {
-            return 1 - --t * t * t * t;
+            return 1 - (--t) * t * t * t;
         },
         easeInOutQuart: function easeInOutQuart(t) {
             return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * --t * t * t * t;
