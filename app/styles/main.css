@@ -4,6 +4,7 @@
 @import "modules/_header.css";
 @import "modules/_blockquote.css";
 @import "modules/_headline.css";
+@import "modules/_tech-list.css";
 
 html {
     font-size: 75%;
@@ -84,7 +85,7 @@ dl,
 ol,
 ul {
     margin-top: var(--space-1);
-    margin-bottom: var(--space-1);
+    margin-bottom: var(--space-2);
     padding-left: 0;
     font-feature-settings: 'kern' 1,'onum' 1,'liga' 1;
 }
@@ -101,4 +102,14 @@ ul {
 
 .module {
     margin-bottom: var(--space-2);
+}
+
+.has-scroll-anchor > a {
+    display: none;
+}
+@media (min-width: 50em) {
+    .has-scroll-anchor > a {
+        display: inline-block;
+        cursor: pointer;
+    }
 }
