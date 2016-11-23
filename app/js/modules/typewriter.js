@@ -1,5 +1,7 @@
 'use strict';
 
+var scrollIt = require('./srollit').scrollIt;
+
 module.exports = function() {
   var typewriterElement = document.getElementById('js-typewriter');
   var text = typewriterElement.getAttribute('data-text');
@@ -17,6 +19,18 @@ module.exports = function() {
       setTimeout(function() {
         typeWriter(text, n);
       }, 100);
+    } else {
+
+      var trigger = document.querySelectorAll('#js-typewriter a');
+      var sections = document.querySelectorAll('article');
+      var done = function done() {
+        //console.log('done');
+      };
+
+      trigger[0].addEventListener('click', function () {
+        scrollIt(sections[0], 300, 'easeInQuad', done);
+      });
+
     }
   }
 
