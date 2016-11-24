@@ -113,3 +113,12 @@ ul {
         cursor: pointer;
     }
 }
+
+@media print {
+    .container, .skills {
+        page-break-before: always;
+    }
+    header {
+        page-break-after: always;
+    }
+}
