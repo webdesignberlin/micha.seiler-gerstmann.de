@@ -1,4 +1,6 @@
 CACHE MANIFEST
+# 2016-11-28:v2.5.0
+
 NETWORK:
 #js/ping.js
 *
@@ -8,6 +10,7 @@ vita.html
 styles/main.css
 js/main.js
 img/micha-frontend.jpg
+img/micha-web.jpg
 
 favicon-16x16.png
 favicon-96x96.png
