@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="cleartype" content="on">
 
-    <link rel=“canonical“ href=“http://micha.seiler-gerstmann.de">
     <meta name="referrer" content="no-referrer">
 
     <!-- DNS Prefetching -->
@@ -66,16 +65,14 @@
         <small class="headline__intro">Wer bin ich?</small>
         Webentwickler aus Leidenschaft
     </h3>
-    <p>In Berlin lebend, 32 Jahre alter, ausgebildeter Mediengestalter und seit einigen Jahren Webentwickler im Bereich Frontend.</p>
+    <p>In Berlin lebend, <span class="js-age">35</span> Jahre alter, ausgebildeter Mediengestalter und seit einigen Jahren Webentwickler im Bereich Frontend.</p>
 
     <h3 class="headline headline--h3">
         <small class="headline__intro">Meine Tätigkeit &hellip;</small>
-        Momentan? Entwickeln.
+        Zur Zeit? Entwickeln und mich um meine Tochter kümmern.
     </h3>
-    <p>Momentan bin ich im Creative Office der McFIT Global Group im Bereich <strong>IT / Digitale Produktentwicklung als Senior Frontend-Entwickler</strong> tätig.
-        Meine Aufgabengebiete umfassen die Realisiserung von Webprojekten (Templateerstellung, Prototypen, Dashboards, Websites, Web-Applikationen etc.).
-        Hinzu kommt das Zuweisen von Aufgaben im Bereich Frontend als auch die Qualitätssicherung. Weitere Aufgaben liegen in der Weiterentwicklung von Workflowprozessen,
-        das Anlernen von neuen Mitarbeitern und das führen von Bewerbungsgesprächen.</p>
+    <p>Momentan bin ich als <strong>Software Entwickler</strong> bei der FitX Digital im Team GymXperience tätig.
+        Meine Aufgabengebiete umfassen die Realisiserung von Web-Applikationen für Mitglieder und Mitarbeiter. Hauptsächlich Touch-Points in den Studios.</p>
 
     <h3 class="headline headline--h3">
         <small class="headline__intro">Mein...</small>
@@ -96,13 +93,13 @@
 Architecture">SMACSS</abbr>, &hellip;) habe ich innerhalb der letzten Jahren den größten Teil der Projekte mit <abbr title="Block, Element, Modifier">BEM</abbr> umgesetzt. Als Präprozessor kommt bei mir <abbr title="Syntactically Awesome Stylesheets">SASS</abbr> mit der <abbr title="Sassy CSS">SCSS</abbr>-Syntax zum Einsatz.</dd>
 
         <dt class="headline">Javascript</dt>
-        <dd>Gehört halt irgendwie dazu. Seit zwei Jahren größtenteils Vanilla unterwegs, davor jQuery. Für den täglichen Gebrauch bin ich relativ fit, auch finde ich mich in express und angular schnell rein. Eine Liebe zu JavaScript habe ich bisher nicht aufbauen können.</dd>
+        <dd>Seit zwei Jahren größtenteils Vanilla unterwegs, davor jQuery. In letzter Zeit mehr Vue.js Applikationen als Express Anwendungen.</dd>
 
         <dt class="headline">Arbeitsumfeld</dt>
-        <dd>Workflow mit Git, Vagrant, Docker, Jenkins, Grunt, Bower, Gulp.</dd>
+        <dd>Workflow mit Git, AWS, Jenkins.</dd>
 
         <dt class="headline">CMS</dt>
-        <dd>Erfahrungen in Typo3, Contao, mehreren Haus-CMS, Redaxo und Wordpress. In letzteren beiden bin ich recht fit. (Backend, Templateerstellung, Module)</dd>
+        <dd>Erfahrungen in Contentful, Typo3, Contao, mehreren Haus-CMS, Redaxo und Wordpress.</dd>
 
         <dt class="headline">Programme</dt>
         <dd>Mit der Adobeproduktpalette aus dem Webbereich bin ich angefreundet, gleiches gilt für Codingtools wie phpstorm, webstorm, bracket oder sublimetext. Erfahrungen mit mehreren Bugtrackern und Taskverwaltungstools sind auch vorhanden.</dd>
@@ -158,5 +155,28 @@ Architecture">SMACSS</abbr>, &hellip;) habe ich innerhalb der letzten Jahren den
     </ul>
 </section>
 <script src="/js/main.js" async></script>
+<script>
+function calculateAge(birthDate) {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const birthYear = birthDate.getFullYear();
+    let age = currentYear - birthYear;
+
+    if (now < new Date(birthDate.setFullYear(currentYear))) {
+        age = age - 1;
+    }
+    return age;
+}
+
+function writeCurrentDate(targets) {
+    const selectors = document.querySelectorAll(targets);
+
+    if (selectors) {
+        selectors.forEach(item => item.textContent = calculateAge(new Date(1984,08,11)));
+    }
+};
+
+writeCurrentDate('.js-age');
+</script>
 </body>
 </html>
