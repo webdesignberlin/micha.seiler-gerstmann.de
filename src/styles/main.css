@@ -7,25 +7,27 @@
 @import "modules/_tech-list.css";
 
 html {
-    font-size: 75%;
-    box-sizing: border-box;
+  font-size: 75%;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 @media (min-width: 40em) {
-    html {
-        font-size: 87.5%;
-    }
+  html {
+    font-size: 87.5%;
+  }
 }
+
 @media (min-width: 50em) {
-    html {
-        font-size: 93.75%;
-    }
+  html {
+    font-size: 93.75%;
+  }
 }
+
 @media (min-width: 64em) {
-    html {
-        font-size: 106.25%;
-    }
+  html {
+    font-size: 106.25%;
+  }
 }
 
 /* + Basics */
@@ -33,86 +35,88 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
-    height: auto;
-    max-width: 100%
+  height: auto;
+  max-width: 100%
 }
 
 body {
-    margin: 0;
-    line-height: var(--line-height);
-    font-weight: 400;
-    font-size: 1.33333rem;
-    color: var(--color-body);
-    font-family: var(--font-family);
+  margin: 0;
+  line-height: var(--line-height);
+  font-weight: 400;
+  font-size: 1.33333rem;
+  color: var(--color-body);
+  font-family: var(--font-family);
 }
 
 dd,
 li {
-    margin-left: var(--space-2);
+  margin-left: var(--space-2);
 }
 
 li {
-    margin-bottom: var(--space-1);
+  margin-bottom: var(--space-1);
 }
 
 p {
   margin-block: var(--space-1) var(--space-2);
   margin-inline: 0;
-  font-feature-settings: 'kern' 1,'onum' 1,'liga' 1;
+  font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
 }
 
 a {
-    transition: color .1s,background-color .1s;
-    color: var(--color-links);
-    text-decoration: none;
+  transition: color .1s, background-color .1s;
+  color: var(--color-links);
+  text-decoration: none;
 }
 
 small {
-    font-style: normal;
-    font-weight: 200;
-    font-size: .88235rem;
+  font-style: normal;
+  font-weight: 200;
+  font-size: .88235rem;
 }
 
 dl,
 ol,
 ul {
-    margin-block: var(--space-1) var(--space-2);
-    padding-inline-start: 0;
-    font-feature-settings: 'kern' 1,'onum' 1,'liga' 1;
+  margin-block: var(--space-1) var(--space-2);
+  padding-inline-start: 0;
+  font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
 }
 
 /* + Styles */
 
 .container {
-    margin: 0 auto;
-    padding-inline: var(--space-2);
-    width: var(--container-width);
-    max-width: 41.66667rem;
+  margin: 0 auto;
+  padding-inline: var(--space-2);
+  width: var(--container-width);
+  max-width: 41.66667rem;
 }
 
 .module {
-    margin-block-end: var(--space-2);
+  margin-block-end: var(--space-2);
 }
 
 .has-scroll-anchor > a {
-    display: none;
+  display: none;
 }
+
 @media (min-width: 50em) {
-    .has-scroll-anchor > a {
-        display: inline-block;
-        cursor: pointer;
-    }
+  .has-scroll-anchor > a {
+    display: inline-block;
+    cursor: pointer;
+  }
 }
 
 @media print {
-    .container, .skills {
-        page-break-before: always;
-    }
-    header {
-        page-break-after: always;
-    }
+  .container, .skills {
+    page-break-before: always;
+  }
+
+  header {
+    page-break-after: always;
+  }
 }

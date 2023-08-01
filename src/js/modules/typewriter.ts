@@ -3,6 +3,7 @@ interface TypeWriterConfig {
   text: string,
   from?: number,
 }
+
 const defaultTypewriterConfig = {
   element: document.getElementById('js-typewriter'),
   text: document.getElementById('js-typewriter')?.getAttribute('data-text') || document.getElementById('js-typewriter')?.innerHTML,
@@ -28,7 +29,7 @@ export const typeWriter = (config?: TypeWriterConfig) => {
   element.style.minHeight = helperHeight + 'px';
 
   if (index < (text.length)) {
-    element.innerHTML = text.substring(0, index+1);
+    element.innerHTML = text.substring(0, index + 1);
 
     if (text[index] === '<') {
       insideHtmlTag = true;
@@ -40,7 +41,7 @@ export const typeWriter = (config?: TypeWriterConfig) => {
     const timeout = insideHtmlTag ? 1 : 100;
 
     index++;
-    setTimeout(function() {
+    setTimeout(function () {
       typeWriter({
         element,
         text,

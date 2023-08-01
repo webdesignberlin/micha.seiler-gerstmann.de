@@ -1,14 +1,14 @@
 :root {
-    --tech-list__font-size-small: var(--font-size-small);
-    --tech-list__module-space: var(--space-2);
+  --tech-list__font-size-small: var(--font-size-small);
+  --tech-list__module-space: var(--space-2);
 }
 
 .tech-list {
-    list-style: none;
-    font-size: var(--tech-list__font-size-small);
-    margin-bottom: var(--tech-list__module-space);
+  list-style: none;
+  font-size: var(--tech-list__font-size-small);
+  margin-bottom: var(--tech-list__module-space);
 }
 
 .tech-list__label {
-    display: inline-block;
+  display: inline-block;
 }
