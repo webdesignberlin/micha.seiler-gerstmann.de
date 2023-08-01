@@ -3,12 +3,20 @@ interface TypeWriterConfig {
   text: string,
   from?: number,
 }
-export const typeWriter = (config: TypeWriterConfig) => {
+const defaultTypewriterConfig = {
+  element: document.getElementById('js-typewriter'),
+  text: document.getElementById('js-typewriter')?.getAttribute('data-text') || document.getElementById('js-typewriter')?.innerHTML,
+  from: 0,
+};
+export const typeWriter = (config?: TypeWriterConfig) => {
   const {
-    element = document.getElementById('js-typewriter'),
-    text = document.getElementById('js-typewriter')?.getAttribute('data-text'),
-    from = 0,
-  } = config;
+    element,
+    text,
+    from,
+  } = {
+    ...defaultTypewriterConfig,
+    ...config,
+  };
 
   if (!element || !text) return;
   const helperHeight = element.offsetHeight;
@@ -21,7 +29,11 @@ export const typeWriter = (config: TypeWriterConfig) => {
 
     index++;
     setTimeout(function() {
-      typeWriter(config);
+      typeWriter({
+        element,
+        text,
+        from: index,
+      });
     }, 100);
   }
 };
