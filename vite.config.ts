@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import { createHtmlPlugin } from 'vite-plugin-html';
+import { VitePWA } from 'vite-plugin-pwa';
 import { htmlInjectHead } from './build-helper/html-head';
 
 /**
@@ -24,6 +24,7 @@ const transformHtmlPlugin = data => ({
 export default defineConfig({
   plugins: [
     transformHtmlPlugin({ injectHtmlHead: htmlInjectHead }),
+    VitePWA({ registerType: 'autoUpdate' }),
   ],
   appType: 'mpa',
   build: {
