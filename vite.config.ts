@@ -2,6 +2,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { htmlInjectHead } from './build-helper/html-head';
+import { htmlInjectFooter } from './build-helper/html-footer';
 
 /**
  * HTML Build replacing
@@ -23,7 +24,10 @@ const transformHtmlPlugin = data => ({
 
 export default defineConfig({
   plugins: [
-    transformHtmlPlugin({ injectHtmlHead: htmlInjectHead }),
+    transformHtmlPlugin({
+      injectHtmlHead: htmlInjectHead,
+      injectHtmlFooter: htmlInjectFooter,
+    }),
     VitePWA({ registerType: 'autoUpdate' }),
   ],
   appType: 'mpa',
