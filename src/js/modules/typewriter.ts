@@ -8,6 +8,9 @@ const defaultTypewriterConfig = {
   text: document.getElementById('js-typewriter')?.getAttribute('data-text') || document.getElementById('js-typewriter')?.innerHTML,
   from: 0,
 };
+
+let insideHtmlTag = false;
+
 export const typeWriter = (config?: TypeWriterConfig) => {
   const {
     element,
@@ -21,11 +24,20 @@ export const typeWriter = (config?: TypeWriterConfig) => {
   if (!element || !text) return;
   const helperHeight = element.offsetHeight;
   let index = from;
-  /* Prevent Reflow if typewriterElement types over one line */
+  // Prevent Reflow if typewriterElement types over one line
   element.style.minHeight = helperHeight + 'px';
 
   if (index < (text.length)) {
     element.innerHTML = text.substring(0, index+1);
+
+    if (text[index] === '<') {
+      insideHtmlTag = true;
+    } else if (text[index] === '>') {
+      insideHtmlTag = false;
+    }
+
+    // reduce timeout for faster writing if inside tag
+    const timeout = insideHtmlTag ? 1 : 100;
 
     index++;
     setTimeout(function() {
@@ -34,6 +46,6 @@ export const typeWriter = (config?: TypeWriterConfig) => {
         text,
         from: index,
       });
-    }, 100);
+    }, timeout);
   }
 };
