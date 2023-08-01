@@ -16,7 +16,6 @@
     font-feature-settings: 'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;
 
     font-family: var(--heading__font-family);
-    font-size-adjust: 0.5;
 }
 
 .headline--h1 {
