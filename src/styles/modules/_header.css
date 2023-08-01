@@ -1,0 +1,13 @@
+.header {
+    height: 100%;
+    min-height: 100dvmin;
+}
+.header__profile {
+  margin-inline: 0;
+}
+
+.header__profile-image {
+  /* max-width: 300px; */
+  width: min(100%, 300px);
+  aspect-ratio: 3/4;
+}

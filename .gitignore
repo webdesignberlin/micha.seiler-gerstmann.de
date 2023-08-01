@@ -1,132 +1,24 @@
-###
-# + Project related
-# ==================================================================
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# processed assets
-app/**/*.map
+node_modules
+dist
+dist-ssr
+*.local
 
-# dist
-dist/
-
-# vendor files
-app/styles/vendor/
-app/js/vendor/
-
-# temporary assets
-app/temp/
-
-# = Project related
-# wraith screenshots https://github.com/jamesryanbell/node-wraith
-shots/
-
-# sassdocs
-docs/*
-
-# release
-release.tar.gz
-release_data/dev_host.json
-release_data/stage_host.json
-release_data/live_host.json
-release_data/id_rsa
-
-# report
-reports/
-
-# coverage results of unit tests
-coverage/
-
-
-###
-# + IDEs / DevEnv
-# ==================================================================
-
-# JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
-/*.iml
-.idea/
-.idea_modules/
-*.ipr
-*.iws
-
-# eclipse pdt
-.project
-
-# Dreamweaver
-_notes
-dwsync.xml
-
-# Sublime Text
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
-.sublime-grunt.cache
-sftp-config.json
-
-# Jenkins, Vagrant
-build/*
-.vagrant/
-
-# Node, Bower, Sass
-node_modules/
-npm-debug.log
-bower_components/
-.sass-cache/
-
-# = IDEs / DevEnv
-
-
-
-###
-# + Operating systems
-# ==================================================================
-
-# Linux
-*~
-.directory
-.ssh/
-
-# Windows
-thumbs.db
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.lnk
-
-# OSX
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.Spotlight-V100
-.Trashes
-.AppleDB
-.AppleDesktop
-
-# = Operating systems
-
-
-
-###
-# + Other
-# ==================================================================
-
-*.tmp
-*.bak
-*.swp
-*.map
-
-# = Other
-
-
-
-###
-# + Do not ignore
-# ==================================================================
-
-!.gitignore
-!.gitkeep
-
-# = Do not ignore
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

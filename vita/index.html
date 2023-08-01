@@ -1,43 +1,11 @@
 <!doctype html>
-<html manifest="cache.manifest" class="no-js" lang="de">
+<html lang="de">
 <head>
     <meta charset="utf-8">
     <title>Lebenslauf - Michael Gerstmann | Frontendentwickler</title>
-    <meta name="description" content="Lebenslauf Michael Gerstmann, Frontend-Entwickler aus Berlin.">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="cleartype" content="on">
-
-    <link rel=“canonical“ href=“http://micha.seiler-gerstmann.de/vita">
-    <meta name="referrer" content="no-referrer">
-
-    <!-- DNS Prefetching -->
-    <link href="//fonts.googleapis.com" rel="dns-prefetch">
-    <link href="//fonts.googleapis.com" rel="preconnect" crossorigin>
-    <link href="//fonts.googleapis.com/css?family=Merriweather:300%7COswald&subset=latin,latin" rel="preload">
-
-    <link href="/styles/main.css" rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Lebenslauf Michael Raguse, Frontend-Entwickler aus Berlin.">
+  <link href="/src/styles/main.css" rel="stylesheet">
+  <template data-replace-key="injectHtmlHead"></template>
 </head>
 <body>
 <header class="container module header">
@@ -50,11 +18,11 @@
         <h2 class="headline headline--h2 has-scroll-anchor"
             data-text="geboren am 11. August 1984 in Schwedt/Oder <br/>ledig, <del>keine Kinder</del> &hearts; <a>...</a>"
             id="js-typewriter">
-            geboren am 11. August 1984 in Schwedt/Oder <br/>ledig, <del>keine Kinder</del> &hearts; <a>...</a></h2>
+            geboren am 11. August 1984 in Schwedt/Oder <br/>ledig, <del>keine Kinder</del> &hearts; <a href="#content-start" aria-hidden="true">...</a></h2>
     </div>
 </header>
 
-<article class="container module">
+<article class="container module" id="content-start">
 
     <h2 class="headline headline--h1">Berufserfahrung</h2>
 
@@ -66,9 +34,9 @@
             Software Entwickler bei FitX
         </h3>
 
-        <p>Für unsere Mitglieder entwickeln wir vorrangig Web Applikationen, welche im Studio bestehende Prozesse digitalisieren und verbessern. 
-            Von Anmeldevorgängen, über Terminbuchungen bis zu interaktiven Displays, die der Information dienen. Dazu nutzen wir Micro-Backends 
-            und Headless Content Management Systeme, um Benutzerschnittstellen zur Verfügung zu stellen. Enge Zusammenarbeit mit Backend und 
+        <p>Für unsere Mitglieder entwickeln wir vorrangig Web Applikationen, welche im Studio bestehende Prozesse digitalisieren und verbessern.
+            Von Anmeldevorgängen, über Terminbuchungen bis zu interaktiven Displays, die der Information dienen. Dazu nutzen wir Micro-Backends
+            und Headless Content Management Systeme, um Benutzerschnittstellen zur Verfügung zu stellen. Enge Zusammenarbeit mit Backend und
             Mobile Entwicklern, sowie einer UX Designerin in unserem Team.</p>
 
         <ul>
@@ -224,7 +192,7 @@
 <footer class="container module">
     <h3 class="headline headline--h3">Und nun?</h3>
     <p>Ich suche Herausforderungen und ein, im besten Fall, agiles crossfunktionales Team, in dem ich meine Fähigkeiten einbringen kann.</p>
-    <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="#">Mail</a> zu erreichen. Ansonsten natürlich auch über die sozialen Kanäle. Code Beispiele und Arbeiten gibt es auf <a href="https://github.com/webdesignberlin">GitHub</a> und per Nachfrage auf <a href="https://bitbucket.org/webdesignberlin/">Bitbucket</a>. Weitere Informationen zu meiner Tätigkeit als Frontend Entwickler gibt es <a href="/">hier</a>.</p>
+    <p>Ich bin per <a class="js-mailto" data-mailto-user="guten-tag" data-mailto-domain="seiler-gerstmann.de" href="#">Mail</a> zu erreichen. Ansonsten natürlich auch über die sozialen Kanäle. Code Beispiele und Arbeiten gibt es auf <a href="https://github.com/webdesignberlin">GitHub</a> und per Nachfrage auf <a href="https://bitbucket.org/webdesignberlin/">Bitbucket</a>. Weitere Informationen zu meiner Tätigkeit als Frontend Entwickler gibt es <a href="/public">hier</a>.</p>
 
     <ul class="social">
         <li>
@@ -269,7 +237,7 @@
         </li>
     </ul>
 </footer>
-<script src="/js/main.js" async></script>
+<script src="/src/js/index.ts" type="module" async></script>
 <script>
     const checkDateNeedZeroPrefix = (date) => date < 10;
     const getFormatedDayOrMonth = (date) => {
