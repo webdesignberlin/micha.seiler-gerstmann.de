@@ -10,6 +10,7 @@ html {
   font-size: 75%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background: var(--color-bg);
 }
 
 @media (min-width: 40em) {
@@ -50,6 +51,7 @@ body {
   font-size: 1.33333rem;
   color: var(--color-body);
   font-family: var(--font-family);
+  --color-scheme: light dark;
 }
 
 dd,
@@ -118,5 +120,21 @@ ul {
 
   header {
     page-break-after: always;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .light-only {
+    display: none;
+  }
+
+  .vita-img {
+    clip-path: url(#vite-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .dark-only {
+    display: none;
   }
 }

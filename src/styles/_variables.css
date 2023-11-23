@@ -7,6 +7,7 @@
   --color-definition__black: #242424;
   --color-definition__red: #d52836;
   --color-definition__gray--light: #717171;
+  --color-bg: #fff;
   --color-body: var(--color-definition__black);
   --color-body--lighten: var(--color-definition__gray--light);
   --color-links: var(--color-definition__red);
@@ -17,4 +18,9 @@
   --space-4: 4rem;
 
   --container-width: 94%;
+
+  @media (prefers-color-scheme: dark) {
+    --color-body: #fff;
+    --color-bg: var(--color-definition__black);
+  }
 }
