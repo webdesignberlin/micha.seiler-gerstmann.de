@@ -11,7 +11,7 @@ export const htmlInjectFooter = `
             </a>
         </li>
         <li>
-            <a href="https://www.germanupa.de/experten/michael-gerstmann" title="Berufsverband der deutschen Usability-Experten">
+            <a href="https://germanupa.de/profile/6836" title="Berufsverband der deutschen Usability-Experten">
                 <b>Mitglied der German&nbsp;<abbr title="Usability Professionals' Association">UPA</abbr></b>
             </a>
         </li>
